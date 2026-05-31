@@ -1,1 +1,1 @@
-This contains all of the code that I did.
+This contains all of the parts of the project that I had more than some input in.
