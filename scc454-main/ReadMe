@@ -1,0 +1,28 @@
+For each task, you download the code and press play. 
+You will need to have the data on your system already, which can be found at https://huggingface.co/datasets/McAuley-Lab/Amazon-Reviews-2023/tree/main
+
+** If you are trying to run the Qdrant code, the servers are down on the 17th of March, so you will not be able to **
+
+We have used the All_Beauty category to run it, so many of the namings are based on that. 
+
+You will need to start with the cleaning code, where you press play on the file.
+Each Task either leads into the next or has its own way to get the data in its code. 
+
+The main order of running is:
+
+Cleaning
+Task 1
+Vectorisation
+Task 2
+Task 3
+Task 4
+
+There are extra files such as Comparison_timings_vectors.py, which is used to compare between the vector databases. You can treat these as side code that can be run at the end for the comparisons. Otherwise, you would need to run many different files and it can get confusing. 
+
+In order to go from Task 1 to Vectorisation and then Task 2, you must use the Mongo code in Task 1. This is because it includes an output file that is used in the Vectorisation, which outputs a file into Task 2.
+
+There are multiple Vectorisation methods shown. If you just want to run it without comparisons, use TFIDF since that is what we used.
+
+The file paths may be different for individual machines, so if it does not carry on running then you may need to change the file location at your own discretion. 
+
+The results should be the same for the most part apart from potentially the database timings in Task 1 and 2. Whilst these may be different from what we have shown, they should be similar enough that the overall result is the same.
